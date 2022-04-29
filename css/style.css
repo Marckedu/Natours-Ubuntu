@@ -1,67 +1,3 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  /*font-size: 1.6rem;*/
-  line-height: 1.7;
-  color: #777;
-  padding: 2.5rem;
-  box-sizing: border-box; }
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(rgba(126, 213, 111, 0.801), rgba(126, 213, 111, 0.801)), url(../img/hero.jpg);
-  /* Poner imagen con degradado*/
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  /* Establecer limites para la visualizacion de una imagen*/ }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    /* Clase posicion de logo */
-    height: 4.5rem; }
-  .header__text-box {
-    /* clase posicion de Heading */
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 4rem; }
-  .heading-primary--main {
-    /* Propiedades heding main */
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInleft;
-    animation-duration: 3s; }
-  .heading-primary--sub {
-    /* Propiedades heiding sub*/
-    display: block;
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 1.5rem;
-    animation-name: moveInright;
-    animation-duration: 3s; }
-
 @keyframes moveInleft {
   /* animacion para ir de izquieda a derecha */
   0% {
@@ -91,6 +27,47 @@ body {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /*font-size: 1.6rem;*/
+  line-height: 1.7;
+  color: #777;
+  padding: 2.5rem;
+  box-sizing: border-box; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 4rem; }
+  .heading-primary--main {
+    /* Propiedades heding main */
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInleft;
+    animation-duration: 3s; }
+  .heading-primary--sub {
+    /* Propiedades heiding sub*/
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5rem;
+    animation-name: moveInright;
+    animation-duration: 3s; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -133,3 +110,26 @@ body {
 .btn--animated {
   animation: moveInBtn .5s ease-out .75s;
   animation-fill-mode: backwards; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(rgba(126, 213, 111, 0.801), rgba(126, 213, 111, 0.801)), url(../img/hero.jpg);
+  /* Poner imagen con degradado*/
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  /* Establecer limites para la visualizacion de una imagen*/ }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    /* Clase posicion de logo */
+    height: 4.5rem; }
+  .header__text-box {
+    /* clase posicion de Heading */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
